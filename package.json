@@ -17,8 +17,11 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.cjs"
     }
-  } ,
+  },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "@vueuse/core": "^10.5.0",
