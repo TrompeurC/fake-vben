@@ -1,5 +1,15 @@
 import { createApp } from "vue";
-import "./style.css";
 import App from "./App.vue";
+import { setupStore } from "./store";
+import 'ant-design-vue/dist/reset.css';
 
-createApp(App).mount("#app");
+function bootstrap() {
+  const app = createApp(App);
+
+  // 初始化 pinia
+  setupStore(app);
+
+  app.mount("#app");
+}
+
+bootstrap();
