@@ -4,7 +4,9 @@
       <slot name="icon"></slot>
     </template>
     <template #default="data">
+      <SvgIcon :name="preIcon" v-if="preIcon" :size="iconSize" />
       <slot v-bind="data || {}"></slot>
+      <SvgIcon :name="preIcon" v-if="preIcon" :size="iconSize" />
     </template>
   </Button>
 </template>
@@ -13,6 +15,7 @@
 import { Button } from "ant-design-vue";
 import { computed, unref, useAttrs } from "vue";
 import { IButtonProps } from "./props";
+import SvgIcon from "@/components/SvgIcon/src/SvgIcon.vue";
 defineOptions({
   name: "VButton",
   inheritAttrs: false
