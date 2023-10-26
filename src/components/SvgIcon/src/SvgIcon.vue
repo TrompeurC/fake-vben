@@ -2,9 +2,9 @@
   <svg
     aria-hidden="true"
     :style="getStyle"
-    :class="[$attrs.class, spin && 'svg-icon-spin']"
+    :class="[$attrs.class, spin && 'svg-icon-spin' , 'svg-icon']"
   >
-    <use :href="symbolId" :fill="color" />
+  <use :xlink:href="symbolId" :fill="color" />
   </svg>
 </template>
 
@@ -34,7 +34,12 @@ const getStyle = computed((): CSSProperties => {
 });
 </script>
 <style scoped lang="less">
-
+ .svg-icon {
+    display: inline-block;
+    overflow: hidden;
+    fill: currentcolor;
+    vertical-align: -0.15em;
+  }
 .svg-icon-spin {
   animation: loadingCircle 1s infinite linear;
 }

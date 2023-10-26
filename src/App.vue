@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Button type="primary">11</Button>
+
+    <Button  pre-icon="sun" post-icon="test" >2222</Button>
   </div>
 </template>
 

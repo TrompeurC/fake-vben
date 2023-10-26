@@ -6,7 +6,7 @@
     <template #default="data">
       <SvgIcon :name="preIcon" v-if="preIcon" :size="iconSize" />
       <slot v-bind="data || {}"></slot>
-      <SvgIcon :name="preIcon" v-if="preIcon" :size="iconSize" />
+      <SvgIcon :name="postIcon" v-if="postIcon" :size="iconSize" />
     </template>
   </Button>
 </template>
