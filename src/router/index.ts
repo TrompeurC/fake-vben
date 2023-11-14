@@ -10,7 +10,7 @@ const getRouteNames = (array: any[]) => {
     getRouteNames(item.children || []);
   });
 };
-
+getRouteNames([]);
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_PUBLIC_PATH),
   routes: [],

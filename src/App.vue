@@ -1,12 +1,12 @@
 <template>
   <div>
     <PopComfirmButton
-    ok-text="a"
-    cancel-text="b"
-    title="Are you sure delete this task?">
+      ok-text="a"
+      cancel-text="b"
+      title="Are you sure delete this task?"
+    >
       222
     </PopComfirmButton>
-
   </div>
 </template>
 

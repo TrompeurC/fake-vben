@@ -19,7 +19,7 @@ export default defineComponent({
   props,
   setup(props: IPopComfirmButtonProps, { slots }) {
     const attrs = useAttrs();
-    console.log(attrs)
+    console.log(attrs);
     const getBindValues = computed(() => ({
       ...props,
       ...unref(attrs)

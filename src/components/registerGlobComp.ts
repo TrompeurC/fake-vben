@@ -3,6 +3,7 @@ import type { App } from "vue";
 
 function registerBlobComp(app: App) {
   // app.component()
+  app;
 }
 
 export { registerBlobComp };
