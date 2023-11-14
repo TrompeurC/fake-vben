@@ -5,3 +5,7 @@ export interface IButtonProps extends ButtonProps {
   postIcon?: string;
   iconSize?: number;
 }
+
+export interface IPopComfirmButtonProps {
+  enable: boolean;
+}
